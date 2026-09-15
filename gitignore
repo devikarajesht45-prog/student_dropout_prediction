@@ -1,0 +1,38 @@
+# --- Virtual environment ---
+.venv/
+venv/
+env/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+
+# --- Environment / secrets ---
+.env
+.env.local
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Editor ---
+.vscode/
+.idea/
+
+# --- Logs ---
+*.log
+
+# --- Optional: uncomment if you don't want to track large/generated files ---
+# data/
+# models/*.pkl
