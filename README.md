@@ -117,7 +117,7 @@ student_dropout_prediction/
 ├── data/
 │   └── student_dropout_data.csv
 ├── docs/
-│   └── student_dropout_dashboard.pdf
+│   └── student_dropout_dashboard.png
 ├── models/
 │   ├── Voting Classifier.pkl
 │   ├── label_encoder.pkl
@@ -127,28 +127,3 @@ student_dropout_prediction/
 ├── app.py
 └── .gitignore
 ```
-
-## ⚠️ Limitations
-
-- **Two classes only** — Enrolled students were excluded, so the models predict Dropout vs Graduate.
-- **Feature timing** — models use 1st and 2nd semester results, so predictions are only available after those semesters.
-- **Label encoding** — categorical columns were label-encoded, which imposes an artificial order that can affect linear and distance-based models.
-- **Evaluation scope** — test set of 726 students from a single institution; results may differ elsewhere.
-- **Correlation, not causation** — e.g. the scholarship insight does not prove scholarships cause lower dropout.
-
-## 🔭 Future Scope
-
-- Include the Enrolled class for a full three-class model
-- Build a model using only 1st semester information
-- Try one-hot/target encoding, class weights or SMOTE, and tune the decision threshold to raise Dropout recall
-- Use SHAP values to explain individual predictions to advisors
-- Retrain on new cohorts and host the app online
-
-## 📎 Links
-
-- **Repository:** https://github.com/devikarajesht45-prog/student_dropout_prediction
-- **Dataset:** https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success
-
-## 👩‍💻 Author
-
-**Devika Rajesh** — Professional Diploma in Data Science, Eminent Edu Skills
